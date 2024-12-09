@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Autenticador TOTP</title>
+<link rel="stylesheet" href="styles.css"/>
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore-compat.js"></script>
+
+<!-- Librería jsSHA para HMAC -->
+<script src="https://cdn.jsdelivr.net/npm/jssha/dist/sha.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Autenticador TOTP</h1>
+    <div class="form-container">
+        <h2>Agregar nueva plataforma</h2>
+        <input type="text" id="platformName" placeholder="Nombre de la plataforma" />
+        <input type="text" id="platformSecret" placeholder="Clave secreta (base32)" />
+        <button id="addBtn">Agregar</button>
+    </div>
+
+    <div class="totp-list">
+        <h2>Mis Códigos</h2>
+        <ul id="totpItems"></ul>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.form-container input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-container button {
+  padding: 10px;
+  font-size: 16px;
+  background: #5B8DF4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background: #4a7ae3;
+}
+
+.totp-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.totp-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.totp-item .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.totp-item .info .platform {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.totp-item .info .code {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.totp-item .info .time-left {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.totp-item button {
+  background: #f44336;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.totp-item button:hover {
+  background: #d32f2f;
+}
